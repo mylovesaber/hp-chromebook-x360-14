@@ -1,16 +1,20 @@
-# macrohard-fonts
+# hp-chromebook-x360-14
+专门存放HP Chromebook X360 14各种图省事的配置信息以便日后万一瞎折腾出错且备份丢失时可以快速重新配置。
+
+## 更换crostini字体
 >巨硬瘟屎官方字体备份，用于别的系统直接套用(删掉了msgothic.ttc文件，这个文件在crostini下会导致vscode中文字体显示异常)
 
-### 适用环境
+#### 适用环境
+
 这个东西理论上linux通用(Debian/Ubuntu系直接用，红帽系可能要稍微改一下用法)，我是使用在crostini中（chromeos的linux子系统，debian10魔改版），可以大幅改善文泉驿和思源黑体这俩linux知名中文字体在crostini安装的软件上中文显示过于模糊的问题，理论上chromeos也可以使用，但chromeos的显示效果还行就懒得改了
 
-### 用法
+#### 用法
 >请在非root用户下操作
 
 ```bash
 cd ~
-git clone https://github.com/mylovesaber/macrohard-fonts.git
-sudo rm macrohard-fonts/README.md
+git clone https://github.com/mylovesaber/hp-chromebook-x360-14.git
+cd hp-chromebook-x360-14
 sudo cp -r macrohard-fonts /usr/share/fonts/
 sudo chmod -R 755 /usr/share/fonts/macrohard-fonts
 sudo fc-cache -f
