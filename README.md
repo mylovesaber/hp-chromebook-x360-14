@@ -13,7 +13,8 @@ systemctl --user enable cros-pulse-config
 
 ## docker一键安装
 >默认安装了老灯的filebrowser增强版和protainer
->请在root下
+>
+>请在root下操作
 
 用法：
 ```bash
