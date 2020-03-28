@@ -11,6 +11,14 @@ systemctl --user enable cros-pulse-config
 /usr/bin/pacmd load-module module-alsa-sink tsched=0 device=hw:0,0
 ```
 
+## docker一键安装
+>默认安装了老灯的filebrowser增强版和protainer
+
+用法：
+```bash
+bash <(curl -s https://raw.githubusercontent.com/mylovesaber/hp-chromebook-x360-14/master/crostini-docker.sh)
+```
+
 ## 更换crostini字体
 >巨硬瘟屎官方字体备份，用于别的系统直接套用(删掉了msgothic.ttc文件，这个文件在crostini下会导致vscode中文字体显示异常)
 
