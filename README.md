@@ -1,6 +1,15 @@
 # hp-chromebook-x360-14
 专门存放HP Chromebook X360 14各种图省事的配置信息以便日后万一瞎折腾出错且备份丢失时可以快速重新配置。
 
+## 解决Linux软件的声音问题
+>参考链接：https://www.reddit.com/r/Crostini/comments/blywee/pixelbook_stable_74_no_audio/
+非root用户下输入以下命令解决：
+```bash
+systemctl --user start cros-pulse-config
+systemctl --user enable cros-pulse-config
+/usr/bin/pacmd load-module module-alsa-sink tsched=0 device=hw:0,0
+```
+
 ## 更换crostini字体
 >巨硬瘟屎官方字体备份，用于别的系统直接套用(删掉了msgothic.ttc文件，这个文件在crostini下会导致vscode中文字体显示异常)
 
