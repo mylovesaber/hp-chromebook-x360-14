@@ -4,7 +4,7 @@
 ## 解决Linux软件的声音问题
 >参考链接：https://www.reddit.com/r/Crostini/comments/blywee/pixelbook_stable_74_no_audio/
 
-非root用户下输入以下命令解决：
+请在非root用户下输入以下命令解决：
 ```bash
 systemctl --user start cros-pulse-config
 systemctl --user enable cros-pulse-config
@@ -13,6 +13,7 @@ systemctl --user enable cros-pulse-config
 
 ## docker一键安装
 >默认安装了老灯的filebrowser增强版和protainer
+>请在root下
 
 用法：
 ```bash
