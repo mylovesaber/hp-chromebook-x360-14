@@ -11,6 +11,11 @@ systemctl --user enable cros-pulse-config
 /usr/bin/pacmd load-module module-alsa-sink tsched=0 device=hw:0,0
 ```
 
+## 安装桌面版qq微信
+此教程是以前我为crostini写的，没意外应该就停更了，里面用最原始即实现那小哥项目在crostini上正常使用的脚本就行，该版本除了微信都能使用，想用微信需要更新包，如何解决依赖问题就看各位自己试水了，我另外两个脚本里面有提到很多更新包的依赖解决可以参考。
+
+https://github.com/mylovesaber/deepin-wine-crostini
+
 ## docker一键安装
 >默认安装了老灯的filebrowser增强版和protainer
 >
